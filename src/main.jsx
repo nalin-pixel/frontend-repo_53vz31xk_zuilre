@@ -20,7 +20,7 @@ function RootRouter() {
     <CartProvider>
       <Layout locale={locale} onLocale={setLocale} theme={theme} onTheme={setTheme}>
         <Routes>
-          <Route path="/" element={<App />} />
+          <Route path="/" element={<App locale={locale} theme={theme} />} />
           <Route path="/shop" element={<Shop locale={locale} />} />
           <Route path="/status" element={<Status locale={locale} />} />
           <Route path="/product/:slug" element={<Product locale={locale} />} />
